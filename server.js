@@ -14,7 +14,6 @@ let queryRoute = require('./api/routes/query')
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }))
 
-
 app.get('/', async (req, res) => {
     res.send('server working')
 })
@@ -26,7 +25,7 @@ app.use(`${apiVersion.v1}/clear`, clearRoute);
 app.use(`${apiVersion.v1}/query`, queryRoute)
 
 
-app.listen(process.env.port, (err) => {
+app.listen(process.env.port|| 5000, (err) => {
     if (err)
         throw err;
     else
