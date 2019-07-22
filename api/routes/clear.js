@@ -30,7 +30,7 @@ route.post('/', async (req, res) => {
                     method: 'POST',
                     form: {
                         token: environment.slack_api_user,
-                        channel: environment.channel[0].id,
+                        channel: req.body.channel_id,
                         ts: reply.messages[i].ts,
                     }
                 }, function (e, r, body) {
