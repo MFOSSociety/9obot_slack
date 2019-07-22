@@ -29,5 +29,5 @@ app.listen(process.env.PORT || 4000, (err) => {
     if (err)
         throw err;
     else
-        console.log(`App is listning to ${process.env.port}`)
+        console.log(`App is listening to ${process.env.port}`)
 });
