@@ -25,7 +25,7 @@ app.use(`${apiVersion.v1}/clear`, clearRoute);
 app.use(`${apiVersion.v1}/query`, queryRoute)
 
 
-app.listen(process.env.port|| 5000, (err) => {
+app.listen(process.env.PORT || 4000, (err) => {
     if (err)
         throw err;
     else
