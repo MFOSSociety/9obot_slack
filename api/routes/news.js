@@ -12,7 +12,7 @@ route.post('/', async (req, res) => {
 
     if (!there) {
         let reply = {
-            // "response_type": "in_channel",
+            "response_type": "in_channel",
             "text": "The selected news source is not valid please select one from the list",
             "blocks": parseError()
         }
@@ -28,7 +28,7 @@ route.post('/', async (req, res) => {
             let newsBody = JSON.parse(response.body)
             if (newsBody.status === "error") {
                 let reply = {
-                    // "response_type": "in_channel",
+                    "response_type": "in_channel",
                     "text": "The selected news source is not valid please select one from the list",
                     "blocks": parseError()
                 }
@@ -38,7 +38,7 @@ route.post('/', async (req, res) => {
 
             else {
                 let reply = {
-                    // "response_type": "in_channel",
+                    "response_type": "in_channel",
                     "text": "Here are the top news",
                     "blocks": parseNews(newsBody.articles)
                 }
