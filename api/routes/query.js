@@ -1,7 +1,7 @@
 var router = require('express')
 const dialogflow = require('dialogflow')
 const uuid = require('uuid')
-const environment = require('../../environment')
+var environment = process.env;
 
 let route = router()
 

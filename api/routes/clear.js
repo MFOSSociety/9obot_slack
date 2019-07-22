@@ -1,6 +1,6 @@
 var router = require('express');
 var request = require('request');
-var environment = require('../../environment')
+var environment = process.env;
 
 var fetchMessageUrl = `https://slack.com/api/conversations.history?token=${environment.slack_api_user}`
 var deleteMessageURL = `https://slack.com/api/chat.delete`

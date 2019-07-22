@@ -1,6 +1,6 @@
 let router = require('express');
 let route = router();
-let environment = require('../../environment')
+var environment = process.env;
 var request = require('request')
 var error = require('../models/newsSources')
 

@@ -1,5 +1,4 @@
 var express = require('express');
-var secrets = require('./environment');
 var bodyParser = require('body-parser');
 
 let apiVersion = {
@@ -27,9 +26,9 @@ app.use(`${apiVersion.v1}/clear`, clearRoute);
 app.use(`${apiVersion.v1}/query`, queryRoute)
 
 
-app.listen(secrets.port, (err) => {
+app.listen(process.env.port, (err) => {
     if (err)
         throw err;
     else
-        console.log(`App is listning to ${secrets.port}`)
+        console.log(`App is listning to ${process.env.port}`)
 });
