@@ -2,7 +2,7 @@ var router = require('express');
 var request = require('request');
 var environment = process.env;
 
-var fetchMessageUrl = `https://slack.com/api/conversations.history?token=${environment.slack_api_user}`
+var fetchMessageUrl = `https://slack.com/api/conversations.history?token=${environment.SLACK_API_USER}`
 var deleteMessageURL = `https://slack.com/api/chat.delete`
 
 let route = router();
@@ -29,7 +29,7 @@ route.post('/', async (req, res) => {
                     },
                     method: 'POST',
                     form: {
-                        token: environment.slack_api_user,
+                        token: environment.SLACK_API_USER,
                         channel: req.body.channel_id,
                         ts: reply.messages[i].ts,
                     }

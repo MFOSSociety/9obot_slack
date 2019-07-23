@@ -120,7 +120,7 @@ function parseNews(news) {
 
 
 function generateNewsURL(text) {
-    return `https://newsapi.org/v2/top-headlines?sources=${text}&apiKey=${environment.new_api}`
+    return `https://newsapi.org/v2/top-headlines?sources=${text}&apiKey=${environment.NEWS_API}`
 }
 
 module.exports = route;

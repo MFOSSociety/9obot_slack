@@ -11,7 +11,7 @@ route.post('/', async function (req, res) {
         const sessionId = uuid.v4();
 
         const sessionClient = new dialogflow.SessionsClient();
-        const sessionPath = sessionClient.sessionPath(environment.dialog_flow_agent, sessionId);
+        const sessionPath = sessionClient.sessionPath(environment.DIALOG_FLOW_AGENT, sessionId);
         
         const request = {
             session: sessionPath,
