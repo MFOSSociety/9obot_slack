@@ -13,7 +13,7 @@
 
 | Command        | Description          | Usage  |
 | ------------- |:-------------:| -----:|
-| **/h1**      | Server test command pings back a joke | /hi |
+| **/hi**      | Server test command pings back a joke | /hi |
 | **/news all**      | Lists all the website we scrape      |   /news all |
 | **/news all**      | Lists all the website we scrape      |   /news all |
 | **/news <news_agency>**      | Fetches top headlines from the agency passed      |   /news recode |
