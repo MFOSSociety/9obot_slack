@@ -2,7 +2,7 @@
 > Slack bot integrated with [infoMUJ](https://play.google.com/store/apps/details?id=app.manipal.aesher.infomuj&hl=en_US) to make sharing of information amongst clubs on slack easy
 
 
-**The bot is WIP please i'd love to cater to the issues and solve them ** *while i am in college :laughing::laughing::laughing::laughing:*
+**The bot is WIP please i'd love to cater to the issues and solve them** *while i am in college :laughing::laughing::laughing::laughing:*
 
 ![](https://i.imgur.com/7gfwKam.png)
 
