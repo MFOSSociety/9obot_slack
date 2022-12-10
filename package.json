@@ -24,7 +24,7 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "dialogflow": "^0.10.2",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "ngrok": "^3.2.3",
     "request": "^2.88.0",
     "slackbots": "^1.2.0",
